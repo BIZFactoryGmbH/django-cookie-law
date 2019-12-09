@@ -16,7 +16,7 @@ http://github.com/TyMaszWeb/django-cookie-law
 Please note that django-cookie-law requires:
 
 - Django >= 1.8
-- django-classy-tags >= 0.3.0
+- django-classy-tags >= 0.9.1
 
 Installation
 ============

@@ -6,6 +6,7 @@ python:
   - "3.5"
   - "3.6"
   - "3.7"
+  - "3.8"
 env:
   global:
     - DJANGO_SETTINGS_MODULE=settings
@@ -14,6 +15,7 @@ env:
     - DJANGO="Django<2.1"
     - DJANGO="Django<2.2"
     - DJANGO="Django<2.3"
+    - DJANGO="Django>=3.0"
 matrix:
   exclude:
     # See: https://docs.djangoproject.com/en/1.11/faq/install/#what-python-version-can-i-use-with-django
@@ -23,6 +25,8 @@ matrix:
       env: DJANGO="Django<2.2"
     - python: "2.7"
       env: DJANGO="Django<2.3"
+    - python: "2.7"
+      env: DJANGO="Django<3.0"
 cache:
   directories:
     - $HOME/.cache/pip

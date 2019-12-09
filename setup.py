@@ -44,8 +44,11 @@ setup(
     classifiers=CLASSIFIERS,
     install_requires=[
         'Django>=1.8',
-        'django-classy-tags>=0.3.0',
+        'django-classy-tags>=0.9.1',
         'pytest-runner>=2.11.1'
+    ],
+    dependency_links=[
+        'https://github.com/BIZFactoryGmbH/django-classy-tags/tarball/master#egg=django-classy-tags-0.9.1'  # Link with version at the end
     ],
     tests_require=[
         'six',
